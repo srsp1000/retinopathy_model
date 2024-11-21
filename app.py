@@ -94,7 +94,7 @@ def predict():
 
         
         relative_image_path = f"uploads/{file.filename}"
-        return render_template('result.html',     image_path=relative_image_path,prediction=predicted_label)
+        return render_template('static/result.html',     image_path=relative_image_path,prediction=predicted_label)
  
    
 
