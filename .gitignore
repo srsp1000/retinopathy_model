@@ -1,0 +1,7 @@
+
+*.pyc
+*.pyo
+model.pkl
+.venv/
+
+

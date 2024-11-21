@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Prediction: {{ prediction }}</p>
+    <img src="{{ url_for('static', filename='uploads/' + image_path.split('/')[-1]) }}" alt="Uploaded Image">
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Diabetic Retinopathy Prediction</h1>
+    
+    <h2>Prediction Result</h2>
+    <p>Prediction: {{ prediction }}</p>
+    <img src="{{ url_for('static', filename=image_path) }}" alt="Uploaded Image" style="max-width: 350px;" class="uploaded-image">
+    <br>
+    <!-- < class="dr-list">
+        <ul> 0 - No DR</ul>
+        <ul> 2 - Moderate</ul>
+        <ul> 3 - Severe</ul>
+        <ul> 4 - Proliferative DR</ul>
+
+
+    </> -->
+    <p class="dr_range"> 0 - No DR | 
+        1 - Mild | 
+        2 - Moderate | 
+        3 - Severe | 
+        4 - Proliferative DR</p>
+    <a href="/" class="upload_another"><button> UploadAnother Image</button> </a>
+</div>
+</body>
+</html>
