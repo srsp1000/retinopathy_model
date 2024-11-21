@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+    
+        <h1>Diabetic Retinopathy Prediction</h1>
+        <p class="intro">Diabetic retinopathy is the leading cause of blindness in the working-age population of the developed world. It is estimated to affect over 93 million people.</p>
+        <form action="http://127.0.0.1:5000/predict" method="POST" enctype="multipart/form-data">
+
+            <label for="file">Upload an image :</label>
+            <input type="file" name="file" accept="image/*" required><br>
+            <button type="submit">Upload and Predict</button>
+        </form>
+       
+    </div>
+</body>
+</html>
